@@ -1,0 +1,18 @@
+Afim de analissar o acidentes com base nas data onde ocorreram, a primeira forma de modelar os dados se dara da seguinte forma: 
+	Inicialmente sera feita uma modificao nos dados, afim de pegar todas as datas e criar novos campos, onde cada data sera ignorada e sera tratado apenas os meses de cada acidente. 
+	As ligações serão feitas da seguinte forma: 
+		Vértices:
+ 		    Acidentes: Cada acidente é representado por um vértice, identificado pelo id.
+		    Datas: Representação de datas  agregadas por mês.
+		    Feriados e Eventos Especiais: Vértices que indicam feriados nacionais, regionais ou eventos climáticos.
+
+		Arestas:
+		    Conecte:
+			Mês -> Acidentes: Identificar a distribuição de acidentes por dia.
+			Feriado -> Acidentes: Associar acidentes aos feriados.
+	
+Esta sera a primeira abordagem a ser feita, com o intuito de relacionar as datas e os acidentes. Com esta modelagem de dados pode-se chegar a conclusoes como: existe um aglomerado de acidentes em determinado mês, datas de feriado sao causas de acidentes uma vez que existem maiores concetracoes de acidentes nelas, e outras conclusoes relacionadas...
+
+*** WARNING ***
+
+Está abordagem apresentou dados bem distribuidos, apresentando uma quantidade constante de acidentes por periodo de tempo. Dessa forma, percebeu-se que os dados apresentados estão lineares, com uma media de 45-55 mil acidentes/mes e uma media de 9-12 mil acidentes/ semana. Fazendo com que qualquer analisse encima deste contexto seja meramente especulativa.
