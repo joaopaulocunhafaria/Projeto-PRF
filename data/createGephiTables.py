@@ -52,13 +52,13 @@ def criar_tabelas_gephi(arquivo_entrada, arquivo_arestas, arquivo_nos):
                             nos.add(marca)
 
                         # Criando nó da classificação do acidente
-                            escritor_nos.writerow([classificacao_acidente, "", "Classificação do Acidente"])
                         if classificacao_acidente not in nos:
+                            escritor_nos.writerow([classificacao_acidente, "", "Classificação do Acidente"])
                             nos.add(classificacao_acidente)
 
                         # Criando arestas entre o ano de fabricação e os outros nós
-                        escritor_arestas.writerow([ano_fabricacao_veiculo,classificacao_acidente, "Relacionado"])
-                        # escritor_arestas.writerow([ano_fabricacao_veiculo, "", "Relacionado"])
+                        escritor_arestas.writerow([ano_fabricacao_veiculo, marca, "Relacionado"])
+                        escritor_arestas.writerow([ano_fabricacao_veiculo, classificacao_acidente, "Relacionado"])
 
         print(f"Tabelas para Gephi criadas: {arquivo_arestas} e {arquivo_nos}.")
 
