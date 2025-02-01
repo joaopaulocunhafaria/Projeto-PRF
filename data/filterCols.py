@@ -11,7 +11,7 @@ def extract_columns(arquivo_entrada, arquivo_saida, colunas):
                 escritor = csv.writer(saida, delimiter=';')
 
                 # Extraindo cabeçalho
-                cabecalho = next(leitor, None)
+                cabecalho = next(leitor, None)  
                 if cabecalho:
                     cabecalho_filtrado = [cabecalho[i] for i in colunas]
                     escritor.writerow(cabecalho_filtrado)

@@ -213,7 +213,8 @@ rodovias_conexoes = {
     }
 
 
-# Função para gerar arquivos de nós e arestas para o Gephi
+import csv
+
 def gerar_dados_gephi(arquivo_entrada, arquivo_nos, arquivo_arestas):
     # Inicializa contadores de IDs
     id_counter = 1
@@ -223,55 +224,51 @@ def gerar_dados_gephi(arquivo_entrada, arquivo_nos, arquivo_arestas):
     nos = []
     arestas = []
 
-    
-
     # Lendo o arquivo CSV de entrada
-    with open(arquivo_entrada, mode='r', encoding='utf-8') as csvfile:
-        leitor = csv.reader(csvfile)
-        next(leitor)  # Pula o cabeçalho
+    try:
+        with open(arquivo_entrada, mode='r', encoding='utf-8') as csvfile:
+            leitor = csv.reader(csvfile, delimiter=',')
+            cabecalho = next(leitor, None)  # Lê o cabeçalho
+            linhas = list(leitor)  # Carrega todas as linhas na memória
 
-        # Iterando pelas linhas do arquivo
-        for linha in leitor:
-            print(linha)
-            rodovia = linha[0]  # Nome da rodovia
-            total = int(linha[1])  # Total de acidentes
-            # A quantidade de acidentes nas rodovias já é um número total, então não precisa considerar graves, feridos, leves neste caso
+            # Iterando pelas linhas do arquivo
+            for linha in linhas:
+                print(linha)  # Para debug
+                rodovia = linha[0]  # Nome da rodovia
+                total = int(linha[1])  # Total de acidentes
 
-            # Verifica se a rodovia já tem um ID atribuído
-            if rodovia not in rodovia_ids:
-                rodovia_ids[rodovia] = id_counter
-                nos.append([id_counter, rodovia, "Rodovia"])
-                id_counter += 1
+                # Verifica se a rodovia já tem um ID atribuído
+                if rodovia not in rodovia_ids:
+                    rodovia_ids[rodovia] = id_counter
+                    nos.append([id_counter, rodovia, "Rodovia"])
+                    id_counter += 1
 
-            rodovia_id = rodovia_ids[rodovia]
+                rodovia_id = rodovia_ids[rodovia]
 
-            # Adiciona nós para a rodovia
-            nos.append([rodovia_id, rodovia, "Rodovia"])
-            
-            # Verifica as conexões da rodovia atual
-            # print(rodovias_conexoes[rodovia])
-            if rodovia in rodovias_conexoes:
-                for rodovia_conectada in rodovias_conexoes[rodovia]:
-                    # Verifica se a rodovia conectada já tem um ID
-                    if rodovia_conectada not in rodovia_ids:
-                        rodovia_ids[rodovia_conectada] = id_counter
-                        nos.append([id_counter, rodovia_conectada, "Rodovia"])
-                        id_counter += 1
-                    
-                    rodovia_conectada_id = rodovia_ids[rodovia_conectada]
-                    
-                    # Calcular o peso da aresta: média dos acidentes
-                    # Aqui, estamos usando o total de acidentes da rodovia atual e da conectada
-                    if rodovia_conectada in rodovia_ids:
-                        # Assume que as rodovias já estão associadas com o número de acidentes
+                # Verifica as conexões da rodovia atual
+                if rodovia in rodovias_conexoes:
+                    for rodovia_conectada in rodovias_conexoes[rodovia]:
+                        # Verifica se a rodovia conectada já tem um ID
+                        if rodovia_conectada not in rodovia_ids:
+                            rodovia_ids[rodovia_conectada] = id_counter
+                            nos.append([id_counter, rodovia_conectada, "Rodovia"])
+                            id_counter += 1
+                        
+                        rodovia_conectada_id = rodovia_ids[rodovia_conectada]
+                        
+                        # Calcular o peso da aresta: média dos acidentes
                         total_conectada = 0
-                        for linha_conectada in leitor:
+                        for linha_conectada in linhas:  # Reutilizando as linhas carregadas
                             if linha_conectada[0] == rodovia_conectada:
                                 total_conectada = int(linha_conectada[1])
                                 break
                         peso_aresta = (total + total_conectada) / 2
                         arestas.append([rodovia_id, rodovia_conectada_id, peso_aresta])
-
+    except FileNotFoundError:
+        print(f"Erro: O arquivo {arquivo_entrada} não foi encontrado.")
+    except Exception as e:
+        print(f"Ocorreu um erro: {e}")
+    
     # Escrevendo o arquivo de nós
     with open(arquivo_nos, mode='w', encoding='utf-8', newline='') as csvfile:
         escritor = csv.writer(csvfile)
