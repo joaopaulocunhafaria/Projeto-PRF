@@ -1,0 +1,276 @@
+Id,Label,Tipo
+RJ 101,RJ 101,Rodovia
+A_RJ 101,8626,Acidentes
+G_RJ 101,807,Graves
+F_RJ 101,7077,Feridos
+L_RJ 101,742,Leves
+GO 153,GO 153,Rodovia
+A_GO 153,3983,Acidentes
+G_GO 153,428,Graves
+F_GO 153,3050,Feridos
+L_GO 153,505,Leves
+ES 101,ES 101,Rodovia
+A_ES 101,7239,Acidentes
+G_ES 101,1013,Graves
+F_ES 101,5833,Feridos
+L_ES 101,390,Leves
+SC 101,SC 101,Rodovia
+A_SC 101,17509,Acidentes
+G_SC 101,1115,Graves
+F_SC 101,14759,Feridos
+L_SC 101,1635,Leves
+RS 116,RS 116,Rodovia
+A_RS 116,6778,Acidentes
+G_RS 116,800,Graves
+F_RS 116,5155,Feridos
+L_RS 116,823,Leves
+PR 277,PR 277,Rodovia
+A_PR 277,14672,Acidentes
+G_PR 277,2385,Graves
+F_PR 277,10621,Feridos
+L_PR 277,1666,Leves
+MS 262,MS 262,Rodovia
+A_MS 262,2392,Acidentes
+G_MS 262,255,Graves
+F_MS 262,1820,Feridos
+L_MS 262,317,Leves
+RO 364,RO 364,Rodovia
+A_RO 364,10973,Acidentes
+G_RO 364,1654,Graves
+F_RO 364,8422,Feridos
+L_RO 364,897,Leves
+PR 376,PR 376,Rodovia
+A_PR 376,10050,Acidentes
+G_PR 376,1413,Graves
+F_PR 376,7734,Feridos
+L_PR 376,903,Leves
+PR 369,PR 369,Rodovia
+A_PR 369,4596,Acidentes
+G_PR 369,598,Graves
+F_PR 369,3629,Feridos
+L_PR 369,369,Leves
+GO 60,GO 60,Rodovia
+A_GO 60,4974,Acidentes
+G_GO 60,585,Graves
+F_GO 60,3826,Feridos
+L_GO 60,563,Leves
+MG 381,MG 381,Rodovia
+A_MG 381,15128,Acidentes
+G_MG 381,2267,Graves
+F_MG 381,11951,Feridos
+L_MG 381,910,Leves
+PI 316,PI 316,Rodovia
+A_PI 316,3372,Acidentes
+G_PI 316,850,Graves
+F_PI 316,2208,Feridos
+L_PI 316,314,Leves
+PI 343,PI 343,Rodovia
+A_PI 343,3934,Acidentes
+G_PI 343,486,Graves
+F_PI 343,3052,Feridos
+L_PI 343,396,Leves
+RS 386,RS 386,Rodovia
+A_RS 386,4428,Acidentes
+G_RS 386,591,Graves
+F_RS 386,3451,Feridos
+L_RS 386,386,Leves
+BA 116,BA 116,Rodovia
+A_BA 116,5336,Acidentes
+G_BA 116,1246,Graves
+F_BA 116,3555,Feridos
+L_BA 116,535,Leves
+SC 280,SC 280,Rodovia
+A_SC 280,2801,Acidentes
+G_SC 280,488,Graves
+F_SC 280,2120,Feridos
+L_SC 280,193,Leves
+PE 101,PE 101,Rodovia
+A_PE 101,5442,Acidentes
+G_PE 101,406,Graves
+F_PE 101,4452,Feridos
+L_PE 101,584,Leves
+PR 116,PR 116,Rodovia
+A_PR 116,7576,Acidentes
+G_PR 116,644,Graves
+F_PR 116,6081,Feridos
+L_PR 116,851,Leves
+DF 20,DF 20,Rodovia
+A_DF 20,2095,Acidentes
+G_DF 20,9,Graves
+F_DF 20,1585,Feridos
+L_DF 20,501,Leves
+MG 365,MG 365,Rodovia
+A_MG 365,3616,Acidentes
+G_MG 365,900,Graves
+F_MG 365,2492,Feridos
+L_MG 365,224,Leves
+PR 373,PR 373,Rodovia
+A_PR 373,2068,Acidentes
+G_PR 373,442,Graves
+F_PR 373,1482,Feridos
+L_PR 373,144,Leves
+MG 262,MG 262,Rodovia
+A_MG 262,4821,Acidentes
+G_MG 262,706,Graves
+F_MG 262,3699,Feridos
+L_MG 262,416,Leves
+MG 40,MG 40,Rodovia
+A_MG 40,9455,Acidentes
+G_MG 40,1469,Graves
+F_MG 40,7288,Feridos
+L_MG 40,698,Leves
+TO 153,TO 153,Rodovia
+A_TO 153,4695,Acidentes
+G_TO 153,1003,Graves
+F_TO 153,3126,Feridos
+L_TO 153,566,Leves
+SC 116,SC 116,Rodovia
+A_SC 116,2213,Acidentes
+G_SC 116,784,Graves
+F_SC 116,1200,Feridos
+L_SC 116,229,Leves
+MT 364,MT 364,Rodovia
+A_MT 364,4307,Acidentes
+G_MT 364,982,Graves
+F_MT 364,2788,Feridos
+L_MT 364,537,Leves
+PB 230,PB 230,Rodovia
+A_PB 230,6535,Acidentes
+G_PB 230,620,Graves
+F_PB 230,5218,Feridos
+L_PB 230,697,Leves
+MG 251,MG 251,Rodovia
+A_MG 251,4344,Acidentes
+G_MG 251,1754,Graves
+F_MG 251,2471,Feridos
+L_MG 251,119,Leves
+SP 116,SP 116,Rodovia
+A_SP 116,16093,Acidentes
+G_SP 116,1374,Graves
+F_SP 116,13441,Feridos
+L_SP 116,1278,Leves
+SC 282,SC 282,Rodovia
+A_SC 282,7864,Acidentes
+G_SC 282,1433,Graves
+F_SC 282,5827,Feridos
+L_SC 282,604,Leves
+MT 163,MT 163,Rodovia
+A_MT 163,6566,Acidentes
+G_MT 163,973,Graves
+F_MT 163,4809,Feridos
+L_MT 163,784,Leves
+RN 101,RN 101,Rodovia
+A_RN 101,2077,Acidentes
+G_RN 101,68,Graves
+F_RN 101,1800,Feridos
+L_RN 101,209,Leves
+RJ 116,RJ 116,Rodovia
+A_RJ 116,5472,Acidentes
+G_RJ 116,282,Graves
+F_RJ 116,4623,Feridos
+L_RJ 116,567,Leves
+RS 392,RS 392,Rodovia
+A_RS 392,2175,Acidentes
+G_RS 392,472,Graves
+F_RS 392,1461,Feridos
+L_RS 392,242,Leves
+RS 285,RS 285,Rodovia
+A_RS 285,2628,Acidentes
+G_RS 285,538,Graves
+F_RS 285,1820,Feridos
+L_RS 285,270,Leves
+BA 324,BA 324,Rodovia
+A_BA 324,3946,Acidentes
+G_BA 324,490,Graves
+F_BA 324,3088,Feridos
+L_BA 324,368,Leves
+CE 116,CE 116,Rodovia
+A_CE 116,4118,Acidentes
+G_CE 116,775,Graves
+F_CE 116,2953,Feridos
+L_CE 116,390,Leves
+RS 290,RS 290,Rodovia
+A_RS 290,3814,Acidentes
+G_RS 290,680,Graves
+F_RS 290,2635,Feridos
+L_RS 290,499,Leves
+BA 101,BA 101,Rodovia
+A_BA 101,4066,Acidentes
+G_BA 101,994,Graves
+F_BA 101,2766,Feridos
+L_BA 101,306,Leves
+SP 381,SP 381,Rodovia
+A_SP 381,2461,Acidentes
+G_SP 381,107,Graves
+F_SP 381,1928,Feridos
+L_SP 381,426,Leves
+RJ 40,RJ 40,Rodovia
+A_RJ 40,3246,Acidentes
+G_RJ 40,267,Graves
+F_RJ 40,2723,Feridos
+L_RJ 40,256,Leves
+SC 470,SC 470,Rodovia
+A_SC 470,4670,Acidentes
+G_SC 470,632,Graves
+F_SC 470,3732,Feridos
+L_SC 470,306,Leves
+PA 316,PA 316,Rodovia
+A_PA 316,2322,Acidentes
+G_PA 316,691,Graves
+F_PA 316,1407,Feridos
+L_PA 316,224,Leves
+MS 163,MS 163,Rodovia
+A_MS 163,7798,Acidentes
+G_MS 163,1689,Graves
+F_MS 163,5328,Feridos
+L_MS 163,781,Leves
+MG 116,MG 116,Rodovia
+A_MG 116,8584,Acidentes
+G_MG 116,3128,Graves
+F_MG 116,5184,Feridos
+L_MG 116,272,Leves
+BA 242,BA 242,Rodovia
+A_BA 242,4172,Acidentes
+G_BA 242,846,Graves
+F_BA 242,2892,Feridos
+L_BA 242,434,Leves
+MA 135,MA 135,Rodovia
+A_MA 135,2381,Acidentes
+G_MA 135,567,Graves
+F_MA 135,1558,Feridos
+L_MA 135,256,Leves
+PE 232,PE 232,Rodovia
+A_PE 232,4908,Acidentes
+G_PE 232,731,Graves
+F_PE 232,3488,Feridos
+L_PE 232,689,Leves
+PR 476,PR 476,Rodovia
+A_PR 476,2840,Acidentes
+G_PR 476,437,Graves
+F_PR 476,2023,Feridos
+L_PR 476,380,Leves
+GO 40,GO 40,Rodovia
+A_GO 40,2462,Acidentes
+G_GO 40,331,Graves
+F_GO 40,1879,Feridos
+L_GO 40,252,Leves
+MT 70,MT 70,Rodovia
+A_MT 70,2949,Acidentes
+G_MT 70,194,Graves
+F_MT 70,2329,Feridos
+L_MT 70,426,Leves
+MG 50,MG 50,Rodovia
+A_MG 50,2397,Acidentes
+G_MG 50,167,Graves
+F_MG 50,2027,Feridos
+L_MG 50,203,Leves
+PA 230,PA 230,Rodovia
+A_PA 230,3078,Acidentes
+G_PA 230,1146,Graves
+F_PA 230,1526,Feridos
+L_PA 230,406,Leves
+PA 163,PA 163,Rodovia
+A_PA 163,3521,Acidentes
+G_PA 163,1766,Graves
+F_PA 163,1595,Feridos
+L_PA 163,160,Leves
