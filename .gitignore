@@ -1,5 +1,4 @@
 gephi/
-gephi-0.10.1-linux-x64/
-dataset/*.csv
-dataset/*.csv#
+gephi-0.10.1-linux-x64/ 
+data/*.csv 
 *.txt
