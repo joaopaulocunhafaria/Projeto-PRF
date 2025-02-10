@@ -65,9 +65,5 @@
 
 <pre><code>Abra os arquivos CSV do diretório <strong>/graphs</strong> no Gephi</code></pre>
 
-<h2>📄 Licença</h2>
-
-<p>Este projeto está disponível sob a licença MIT. Sinta-se à vontade para usá-lo e contribuir!</p>
-
 </body>
 </html>
